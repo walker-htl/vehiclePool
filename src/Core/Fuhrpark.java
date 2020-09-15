@@ -2,6 +2,7 @@ package Core;
 
 import Comparer.*;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Fuhrpark
 {
@@ -28,7 +29,7 @@ public class Fuhrpark
 
     public void printErstZulassungsListe()
     {
-        Arrays.sort(fahrzeuge, new ErstZulassungsComparer());
+        Arrays.sort(fahrzeuge, Collections.reverseOrder(new ErstZulassungsComparer()));
         printArray();
     }
 
