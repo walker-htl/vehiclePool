@@ -14,10 +14,15 @@ public class Main {
         fuhrpark.addFahrzeug(yahmaha03);
         fuhrpark.addFahrzeug(rolls);
 
+        System.out.println("Sortiert nach dem Preis:");
         fuhrpark.printPreisliste();
-        System.out.println();
+        System.out.println("\nSortiert nach der Erstzulassung:");
         fuhrpark.printErstZulassungsListe();
-        System.out.println();
+        System.out.println("\nSortiert nach dem Namen:");
         fuhrpark.printNamenListe();
+        System.out.println("\nSortiert nach der Leistung:");
+        fuhrpark.printLeistungListe();
+        System.out.println("\nSortiert nach dem Spritverbrauch:");
+        fuhrpark.printSpritverbrauchListe();
     }
 }

@@ -1,8 +1,6 @@
 package Core;
 
-import Comparer.ErstZulassungsComparer;
-import Comparer.NamenComparer;
-
+import Comparer.*;
 import java.util.Arrays;
 
 public class Fuhrpark
@@ -37,6 +35,18 @@ public class Fuhrpark
     public void printNamenListe()
     {
         Arrays.sort(fahrzeuge, new NamenComparer());
+        printArray();
+    }
+
+    public void printLeistungListe()
+    {
+        Arrays.sort(fahrzeuge, new LeistungComparer());
+        printArray();
+    }
+
+    public void printSpritverbrauchListe()
+    {
+        Arrays.sort(fahrzeuge, new SpritverbrauchComparer());
         printArray();
     }
 
